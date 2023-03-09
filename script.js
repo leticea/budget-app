@@ -9,6 +9,7 @@ const productCostError = document.getElementById("product-cost-error");
 const amount = document.getElementById("amount");
 const expenditureValue = document.getElementById("expenditure-value");
 const balanceValue = document.getElementById("balance-amount");
+const list = document.getElementById("list");
 let tempAmount = 0;
 
 totalAmountButton.addEventListener("click", () => {
@@ -94,7 +95,7 @@ checkAmountButton.addEventListener("click", () => {
   balanceValue.innerText = totalBalance;
 
   // Create list
-  listCreator(productTitle.value, userAmonut.value);
+  listCreator(productTitle.value, userAmount.value);
 
   // Clear inputs
   productTitle.value = "";
