@@ -78,4 +78,25 @@ checkAmountButton.addEventListener("click", () => {
     productTitleError.classList.remove("hide");
     return false;
   }
+
+  // Enable buttons
+  disableButtons(false);
+
+  // Expense
+  let expenditure = parseInt(userAmount.value);
+
+  // Total expense (existing + new)
+  let sum = parseInt(expenditureValue.innerText) + expenditure;
+  expenditureValue.innerText = sum;
+
+  // Total balance = budget - total expense
+  const totalBalance = tempAmount - sum;
+  balanceValue.innerText = totalBalance;
+
+  // Create list
+  listCreator(productTitle.value, userAmonut.value);
+
+  // Clear inputs
+  productTitle.value = "";
+  userAmount.value = "";
 })
