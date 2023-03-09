@@ -48,3 +48,11 @@ const modifyElement = (element, edit = false) => {
     parseInt(currentExpense) - parseInt(parentAmount);
   parentDiv.remove();
 };
+
+const listCreator = (expenseName, expenseValue) => {
+  let subListContent = document.createElement("div");
+  subListContent.classList.add("sublist-content", "flex-space");
+  list.appendChild(subListContent);
+  subListContent.innerHTML = `<p class="product">${expenseName}</p><p class="amount">${expenseValue}</p>`;
+  let editButton = document.createElement("button");
+};
