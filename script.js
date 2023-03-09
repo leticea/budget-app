@@ -72,3 +72,10 @@ const listCreator = (expenseName, expenseValue) => {
   subListContent.appendChild(deleteButton);
   document.getElementById("list").appendChild(subListContent);
 };
+
+checkAmountButton.addEventListener("click", () => {
+  if (!userAmount.value || !productTitle.value) {
+    productTitleError.classList.remove("hide");
+    return false;
+  }
+})
