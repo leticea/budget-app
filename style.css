@@ -99,3 +99,10 @@ body {
   border-radius: 5px;
   cursor: pointer;
 }
+
+.list {
+  background-color: #fff;
+  padding: 1.8rem 1.2rem;
+  box-shadow: 0 0.6rem 1.2rem rgba(28, 0, 80, 0.06);
+  border-radius: 10px;
+}
