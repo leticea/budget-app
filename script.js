@@ -20,5 +20,13 @@ totalAmountButton.addEventListener("click", () => {
     errorMessage.classList.add("hide");
     amount.innerHTML = tempAmount;
     balanceValue.innerText = tempAmount - expenditureValue.innerText;
+    totalAmount.value = 0;
   }
-})
+});
+
+const disableButtons = (bool) => {
+  let editButtons = document.getElementsByClassName("edit");
+  Array.from(editButtons).forEach((element) => {
+    element.disabled = bool;
+  });
+};
