@@ -55,3 +55,20 @@ body {
   outline: none;
   margin-bottom: 0.6rem;
 }
+
+.container input:focus {
+  border-color: #587ef4;
+}
+
+.total-amount-container, .user-amount-container {
+  background: #fff;
+  padding: 1.25rem 0.9rem;
+  border-radius: 5px;
+  box-shadow: 0 0.6rem 1.2rem rgba(28, 0, 80, 0.06);
+}
+
+.output-container {
+  background-color: #587ef4;
+  color: fff;
+  
+}
