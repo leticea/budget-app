@@ -10,3 +10,15 @@ const amount = document.getElementById("amount");
 const expenditureValue = document.getElementById("expenditure-value");
 const balanceValue = document.getElementById("balance-amount");
 let tempAmount = 0;
+
+totalAmountButton.addEventListener("click", () => {
+  tempAmount = totalAmount.value;
+
+  if (tempAmount === "" || tempAmount < 0) {
+    errorMessage.classList.remove("hide");
+  } else {
+    errorMessage.classList.add("hide");
+    amount.innerHTML = tempAmount;
+    balanceValue.innerText = tempAmount - expenditureValue.innerText;
+  }
+})
