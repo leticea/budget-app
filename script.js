@@ -55,4 +55,9 @@ const listCreator = (expenseName, expenseValue) => {
   list.appendChild(subListContent);
   subListContent.innerHTML = `<p class="product">${expenseName}</p><p class="amount">${expenseValue}</p>`;
   let editButton = document.createElement("button");
+  editButton.classList.add("fa-solid", "fa-pen-to-square", "edit");
+  editButton.style.fontSize = "1.2rem";
+  editButton.addEventListener("click", () => {
+    modifyElement(editButton, true);
+  })
 };
