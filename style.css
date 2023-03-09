@@ -106,3 +106,17 @@ body {
   box-shadow: 0 0.6rem 1.2rem rgba(28, 0, 80, 0.06);
   border-radius: 10px;
 }
+
+.sublist-content {
+  width: 100%;
+  border-left: 0.3rem solid #587ef4;
+  margin-bottom: 0.6rem;
+  padding: 0.5rem 1rem;
+  display: grid;
+  grid-template-columns: 3fr 2fr 1fr 1fr;
+}
+
+.product {
+  font-weight: 500;
+  color: #363d55;
+}
