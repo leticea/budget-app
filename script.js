@@ -21,7 +21,8 @@ totalAmountButton.addEventListener("click", () => {
     errorMessage.classList.add("hide");
     amount.innerHTML = tempAmount;
     balanceValue.innerText = tempAmount - expenditureValue.innerText;
-    totalAmount.value = 0;
+    // Clear input
+    totalAmount.value = "";
   }
 });
 
@@ -100,4 +101,4 @@ checkAmountButton.addEventListener("click", () => {
   // Clear inputs
   productTitle.value = "";
   userAmount.value = "";
-})
+});
