@@ -60,7 +60,8 @@ body {
   border-color: #587ef4;
 }
 
-.total-amount-container, .user-amount-container {
+.total-amount-container,
+.user-amount-container {
   background: #fff;
   padding: 1.25rem 0.9rem;
   border-radius: 5px;
@@ -69,6 +70,32 @@ body {
 
 .output-container {
   background-color: #587ef4;
-  color: fff;
-  
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0.6rem 1.2rem rgba(28, 0, 80, 0.06);
+  margin: 2rem 0;
+  padding: 1.2rem;
+}
+
+.output-container p {
+  font-weight: 500;
+  margin-bottom: 0.6rem;
+}
+
+.output-container span {
+  display: block;
+  text-align: center;
+  color: #e5e5e5;
+}
+
+.submit {
+  font-size: 1rem;
+  margin-top: 0.8rem;
+  background-color: #587ef4;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
 }
