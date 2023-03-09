@@ -120,3 +120,30 @@ body {
   font-weight: 500;
   color: #363d55;
 }
+
+.amount {
+  color: #414a67;
+  margin-left: 20%;
+}
+
+.icons-container {
+  width: 5rem;
+  margin: 1.2rem;
+  align-items: center;
+}
+
+.product-title {
+  margin-bottom: 1rem;
+}
+
+.hide {
+  display: none;
+}
+
+.error {
+  color: #ff465a;
+}
+
+.edit {
+  margin-left: auto;
+}
